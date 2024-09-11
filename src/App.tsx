@@ -1,11 +1,14 @@
-import { UseEffectDemo } from "./components/use-effect-demo";
-import { UseStateDemo } from "./components/use-state-demo";
+import { ThemeProvider } from "./components/providers/theme-provider";
+import { UseContextDemo } from "./components/use-context-demo";
 
 function App() {
   return (
     <>
       {/* <UseStateDemo /> */}
-      <UseEffectDemo />
+      {/* <UseEffectDemo /> */}
+      <ThemeProvider>
+        <UseContextDemo />
+      </ThemeProvider>
     </>
   );
 }
