@@ -1,4 +1,4 @@
-import { UseMemoDemo } from "./components/use-memo-demo";
+import { UseCallbackDemo } from "./components/use-callback-demo";
 
 function App() {
   return (
@@ -9,7 +9,8 @@ function App() {
         <UseContextDemo />
       </ThemeProvider> */}
       {/* <UseRefDemo /> */}
-      <UseMemoDemo />
+      {/* <UseMemoDemo /> */}
+      <UseCallbackDemo />
     </>
   );
 }
