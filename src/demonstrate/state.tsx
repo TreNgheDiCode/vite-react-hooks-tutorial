@@ -57,17 +57,11 @@ class Counter extends Component<{ count: number }, CounterState> {
   }
 }
 
-// Function version of the useState demo
-const initialState = () => {
-  console.log("Initial state");
-  return 0;
-};
-
-function CounterFunction() {
+function CounterFunction({ initialState }: { initialState: number }) {
   // In class components, state is an object.
   // In function components, state is a variable (count).
   // The setCount function is used to update the count variable, same as this.setState in class components.
-  const [count, setCount] = useState(() => initialState());
+  const [count, setCount] = useState(initialState);
 
   const changeCount = (amount: number) => {
     setCount((prev) => prev + amount);

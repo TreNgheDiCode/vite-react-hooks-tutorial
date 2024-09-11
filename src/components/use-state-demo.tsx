@@ -7,7 +7,7 @@ export const UseStateDemo = () => {
       <Counter count={0} />
 
       {/* Function */}
-      <CounterFunction />
+      <CounterFunction initialState={0} />
     </>
   );
 };
