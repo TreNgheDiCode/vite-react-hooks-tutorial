@@ -1,14 +1,14 @@
-import { ThemeProvider } from "./components/providers/theme-provider";
-import { UseContextDemo } from "./components/use-context-demo";
+import { UseRefDemo } from "./components/use-ref-demo";
 
 function App() {
   return (
     <>
       {/* <UseStateDemo /> */}
       {/* <UseEffectDemo /> */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <UseContextDemo />
-      </ThemeProvider>
+      </ThemeProvider> */}
+      <UseRefDemo />
     </>
   );
 }
